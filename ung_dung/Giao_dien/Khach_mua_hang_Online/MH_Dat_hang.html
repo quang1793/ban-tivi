@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body style="font-family:Arial;width:100%;box-sizing:border-box;margin:0px;padding:0px;overflow-x:hidden"
+      class="container-fluid">
+
+    <form method="post" action="/">
+        <div class="CUA_SO_1" style="background-color:whitesmoke">
+            
+            <div class="dropdown" style="text-align: right">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Xem giỏ hàng</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                
+                    {{Chuoi_HTML_Gio_hang}}</div>
+            </div>            
+
+            <div class="btn PET">
+                <img src="{{url_for('static', filename = 'PET.png')}}"
+                     style="width:40px;height:30px;" />
+                <div class="btn TOM_TAT" style="color:blue">Mô hình - Công nghệ - Kỹ thuật</div>
+            </div> 
+            <div>
+                {{Chuoi_HTML_Khach_hang}}
+            </div>
+
+            <div class="dropdown">
+                &nbsp;&nbsp;&nbsp;<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Đến cửa hàng</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">                
+                    <div class="btn TOM_TAT" style="color:blue">Cửa hàng Tivi PET</div>
+                    <br/>                        
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.635928416864!2d106.68015726508435!3d10.76251656239263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1bf8da4697%3A0x5c1e00e1d6a2b7a6!2zSSwgMjI3IMSQxrDhu51uZyBOZ3V54buFbiBWxINuIEPhu6ssIHBoxrDhu51uZyA0LCBRdeG6rW4gNSwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1521615570234" 
+                            width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>  
+            <div class="DANH_SACH_CHUC_NANG">
+                
+                <div class="btn  CHUC_NANG">
+                    <input name="Th_Chuoi_Tra_cuu" style="height:30px"
+                           spellcheck="false" autocomplete="off" 
+                           value="{{Chuoi_Tra_cuu}}" />
+                </div>
+                 
+            </div>            
+        </div>
+
+        <div class="CUA_SO_2" style="margin:15px">
+            {{Chuoi_QL_Dang_nhap}}
+            {{Chuoi_HTML_Mua_hang}}  
+            {{Chuoi_Thong_bao}}
+        </div>
+    </form>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>

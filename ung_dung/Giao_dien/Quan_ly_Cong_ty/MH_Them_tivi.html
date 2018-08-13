@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+</head>
+
+<body style="font-family:Arial;width:100%;box-sizing:border-box;margin:0px;padding:0px;overflow-x:hidden" class="container-fluid">
+
+    <form method=post enctype=multipart/form-data style="border:solid">
+        <div class="CUA_SO_1" style="background-color:whitesmoke">
+            <div class="THEM_TIVI">                
+                <div class="container">                    
+                    <table class="table">     
+                      <thead>
+                        <tr>
+                            <th colspan="2">THÊM MỚI TIVI</th>                           
+                        </tr>
+                        </thead>                   
+                      <tbody>
+                        <tr>
+                          <td>Tên</td>
+                          <td><input name="Th_Ten" spellcheck="false" autocomplete="off" value="" required /></td>                          
+                        </tr>
+                        <tr>
+                          <td>Ký hiệu</td>
+                          <td><input name="Th_Ky_hieu" spellcheck="false" autocomplete="off" value="" required /></td>                          
+                        </tr>
+                        <tr>
+                          <td>Đơn giá bán</td>
+                          <td><input name="Th_Don_gia_Ban" type = "number" autocomplete="off" value="0"/></td>                     
+                        </tr>
+                        <tr>
+                            <td>Đơn giá nhập</td>
+                            <td><input name="Th_Don_gia_Nhap" type="number" autocomplete="off" value="0"/></td>                          
+                        </tr>
+                        <tr>
+                            <td>Số lượng tồn</td>
+                            <td><input name="Th_So_luong_Ton" type="number" autocomplete="off" value="0"/></td>                          
+                        </tr>
+                        <tr>
+                            <td>Nhóm</td>
+                            <td>{{Chuoi_Nhom_Tivi}}</td>                          
+                        </tr>
+                        <tr>
+                            <td>Chọn tập tin</td>
+                            <td><input type=file name=file required></td>                          
+                        </tr>
+                        <tr>                            
+                            <td colspan="2"><button class="btn btn-danger" type="submit">Đồng ý</button></td>                          
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>               
+
+            </div>
+        </div>
+        <div class="CUA_SO_2" style="margin:15px">
+            {{Chuoi_Thong_bao}}  
+        </div>    
+    </form>
+
+
+
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>

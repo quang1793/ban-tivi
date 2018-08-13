@@ -1,0 +1,17 @@
+{
+    "Ten": "qwe",
+    "Ma_so": "TIVI_37",
+    "Ky_hieu": "qwe",
+    "Don_gia_Ban": 1,
+    "Don_gia_Nhap": 2,
+    "So_luong_Ton": 3,
+    "Danh_sach_Phieu_Ban": [],
+    "Danh_sach_Phieu_Nhap": [],
+    "Nhom_Tivi": {
+        "Ten": "LG",
+        "Ma_so": {
+            "Ten": "LG",
+            "Ma_so": "LG"
+        }
+    }
+}
